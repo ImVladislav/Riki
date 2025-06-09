@@ -84,7 +84,7 @@ body {
 .hero {
   padding: 8rem 0 4rem;
   text-align: center;
-  min-height: 80vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
