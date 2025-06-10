@@ -126,6 +126,17 @@ footer {
   text-align: center;
 }
 
+footer::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to top, black, transparent);
+  pointer-events: none;
+}
+
 .footer-buttons {
   display: flex;
   justify-content: center;
