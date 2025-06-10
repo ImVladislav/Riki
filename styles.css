@@ -25,16 +25,41 @@ body {
   z-index: 1;
 }
 
+/* Background Animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-size: contain;
-  background-position: center;
-  background-image: url(/images/bg_temp.webp);
+  background: linear-gradient(-45deg, #000000, #1a1a1a, #000000, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   position: relative;
+  overflow: hidden;
+}
+
+.gradient-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50vh;
+  background: linear-gradient(to top, rgb(0, 0, 0) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero .container {
@@ -45,7 +70,7 @@ body {
 .belt-container {
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
@@ -55,28 +80,6 @@ body {
   height: auto;
   position: relative;
   margin-top: 8rem;
-}
-.hero {
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background-size: contain;
-  background-position: center;
-  background-image: url(/images/bg_temp.webp);
-  position: relative;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-  pointer-events: none;
-  z-index: 1;
 }
 
 .belt-image {
@@ -216,11 +219,14 @@ footer {
     top: 3%;
   }
   .dog-image {
-    width: 700px;
+    width: 900px;
     margin-top: 10rem;
   }
+  .belt-container {
+    max-width: 1000px;
+  }
   .belt-text {
-    font-size: 0.9rem;
+    font-size: 1.8rem;
   }
   .heart-image {
     width: 200px;
@@ -233,11 +239,14 @@ footer {
     top: 3%;
   }
   .dog-image {
-    width: 600px;
+    width: 800px;
     margin-top: 8rem;
   }
+  .belt-container {
+    max-width: 900px;
+  }
   .belt-text {
-    font-size: 0.7rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -247,11 +256,14 @@ footer {
     top: 2%;
   }
   .dog-image {
-    width: 400px;
+    width: 600px;
     margin-top: 7rem;
   }
+  .belt-container {
+    max-width: 800px;
+  }
   .belt-text {
-    font-size: 0.6rem;
+    font-size: 1.3rem;
   }
   .heart-image {
     width: 130px;
@@ -264,11 +276,14 @@ footer {
     top: 2%;
   }
   .dog-image {
-    width: 300px;
+    width: 500px;
     margin-top: 6rem;
   }
+  .belt-container {
+    max-width: 700px;
+  }
   .belt-text {
-    font-size: 0.55rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -278,11 +293,14 @@ footer {
     top: 2%;
   }
   .dog-image {
-    width: 300px;
+    width: 400px;
     margin-top: 5rem;
   }
+  .belt-container {
+    max-width: 600px;
+  }
   .belt-text {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
   }
   .footer-button {
     width: 55px;
@@ -299,10 +317,13 @@ footer {
     top: 3%;
   }
   .dog-image {
-    width: 300px;
+    width: 350px;
+  }
+  .belt-container {
+    max-width: 500px;
   }
   .belt-text {
-    font-size: 0.45rem;
+    font-size: 0.8rem;
   }
   .footer-button {
     width: 50px;
@@ -324,8 +345,11 @@ footer {
     font-size: 3.2rem;
     top: 2%;
   }
+  .belt-container {
+    max-width: 300px;
+  }
   .belt-text {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
   }
   .footer-button {
     width: 45px;
@@ -346,8 +370,11 @@ footer {
   .logo-text {
     font-size: 2.8rem;
   }
+  .belt-container {
+    max-width: 280px;
+  }
   .belt-text {
-    font-size: 0.35rem;
+    font-size: 0.25rem;
   }
   .footer-button {
     width: 40px;
@@ -365,8 +392,11 @@ footer {
   .logo-text {
     font-size: 2.5rem;
   }
+  .belt-container {
+    max-width: 260px;
+  }
   .belt-text {
-    font-size: 0.3rem;
+    font-size: 0.2rem;
   }
   .footer-button {
     width: 35px;
