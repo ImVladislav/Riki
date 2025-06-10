@@ -155,9 +155,10 @@ body {
   text-align: center;
 }
 .dog-image {
-  width: 60%;
+  width: 100%;
   height: auto;
   position: relative;
+  margin-top: 8rem;
 }
 .belt-image {
   width: 100%;
@@ -180,7 +181,7 @@ body {
 
 .logo-text {
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 8rem;
@@ -358,10 +359,10 @@ footer .belt-container {
 @media screen and (min-width: 1921px) {
   .logo-text {
     font-size: 10rem;
-    top: 8%;
+    top: 3%;
   }
   .dog-image {
-    width: 45%;
+    margin-top: 10rem;
   }
   .belt-container {
     max-width: 800px;
@@ -378,10 +379,10 @@ footer .belt-container {
 @media screen and (max-width: 1920px) {
   .logo-text {
     font-size: 8rem;
-    top: 7%;
+    top: 3%;
   }
   .dog-image {
-    width: 50%;
+    margin-top: 8rem;
   }
   .belt-container {
     max-width: 700px;
@@ -391,9 +392,10 @@ footer .belt-container {
 @media screen and (max-width: 1440px) {
   .logo-text {
     font-size: 7rem;
-    top: 6%;
+    top: 2%;
   }
   .dog-image {
+    margin-top: 7rem;
     width: 100%;
   }
   .belt-container {
@@ -404,9 +406,10 @@ footer .belt-container {
 @media screen and (max-width: 1280px) {
   .logo-text {
     font-size: 6rem;
-    top: 5%;
+    top: 2%;
   }
   .dog-image {
+    margin-top: 6rem;
     width: 90%;
   }
 }
@@ -414,9 +417,10 @@ footer .belt-container {
 @media screen and (max-width: 1024px) {
   .logo-text {
     font-size: 5rem;
-    top: 4%;
+    top: 2%;
   }
   .dog-image {
+    margin-top: 5rem;
     width: 80%;
   }
   .footer-button {
