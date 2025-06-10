@@ -33,6 +33,7 @@ body {
   align-items: center;
   background-size: contain;
   background-position: center;
+  background-image: url(/images/bg_temp.webp);
   position: relative;
 }
 
@@ -54,6 +55,28 @@ body {
   height: auto;
   position: relative;
   margin-top: 8rem;
+}
+.hero {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: contain;
+  background-position: center;
+  background-image: url(/images/bg_temp.webp);
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .belt-image {
