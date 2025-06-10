@@ -155,7 +155,7 @@ body {
   text-align: center;
 }
 .dog-image {
-  width: 100%;
+  width: 800px;
   height: auto;
   position: relative;
   margin-top: 8rem;
@@ -363,6 +363,7 @@ footer .belt-container {
   }
   .dog-image {
     margin-top: 10rem;
+    width: 1000px;
   }
   .belt-container {
     max-width: 800px;
@@ -383,6 +384,7 @@ footer .belt-container {
   }
   .dog-image {
     margin-top: 8rem;
+    width: 800px;
   }
   .belt-container {
     max-width: 700px;
@@ -396,7 +398,7 @@ footer .belt-container {
   }
   .dog-image {
     margin-top: 7rem;
-    width: 100%;
+    width: 700px;
   }
   .belt-container {
     max-width: 600px;
@@ -410,7 +412,7 @@ footer .belt-container {
   }
   .dog-image {
     margin-top: 6rem;
-    width: 50%;
+    width: 600px;
   }
 }
 
@@ -421,7 +423,7 @@ footer .belt-container {
   }
   .dog-image {
     margin-top: 5rem;
-    width: 80%;
+    width: 500px;
   }
   .footer-button {
     width: 55px;
@@ -435,7 +437,7 @@ footer .belt-container {
     top: 3%;
   }
   .dog-image {
-    width: 75%;
+    width: 400px;
   }
   .belt-container {
     max-width: 500px;
@@ -459,7 +461,7 @@ footer .belt-container {
     text-shadow: -4px 5px 4px #000, 0 -2px 0 #000, 2px 0 0 #000, -2px 0 0 #000;
   }
   .dog-image {
-    width: 85%;
+    width: 320px;
   }
   .belt-container {
     max-width: 400px;
@@ -482,7 +484,7 @@ footer .belt-container {
     text-shadow: -3px 4px 3px #000, 0 -1px 0 #000, 1px 0 0 #000, -1px 0 0 #000;
   }
   .dog-image {
-    width: 95%;
+    width: 280px;
   }
   .belt-container {
     max-width: 320px;
@@ -505,7 +507,7 @@ footer .belt-container {
     font-size: 2.5rem;
   }
   .dog-image {
-    width: 100%;
+    width: 250px;
   }
   .belt-container {
     max-width: 280px;
@@ -528,7 +530,7 @@ footer .belt-container {
     top: 10%;
   }
   .dog-image {
-    width: 40%;
+    width: 400px;
   }
   .belt-container {
     transform: scale(0.8);
