@@ -353,3 +353,188 @@ footer .belt-container {
     word-break: break-all;
   }
 }
+
+/* Media Queries */
+@media screen and (min-width: 1921px) {
+  .logo-text {
+    font-size: 10rem;
+    top: 8%;
+  }
+  .dog-image {
+    width: 45%;
+  }
+  .belt-container {
+    max-width: 800px;
+  }
+  .belt-text {
+    font-size: 1.2rem;
+  }
+  .footer-button {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .logo-text {
+    font-size: 8rem;
+    top: 7%;
+  }
+  .dog-image {
+    width: 50%;
+  }
+  .belt-container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .logo-text {
+    font-size: 7rem;
+    top: 6%;
+  }
+  .dog-image {
+    width: 55%;
+  }
+  .belt-container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .logo-text {
+    font-size: 6rem;
+    top: 5%;
+  }
+  .dog-image {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-text {
+    font-size: 5rem;
+    top: 4%;
+  }
+  .dog-image {
+    width: 65%;
+  }
+  .footer-button {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-text {
+    font-size: 4rem;
+    top: 3%;
+  }
+  .dog-image {
+    width: 75%;
+  }
+  .belt-container {
+    max-width: 500px;
+  }
+  .belt-text {
+    font-size: 0.9rem;
+  }
+  .footer-button {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-buttons {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-text {
+    font-size: 3.2rem;
+    top: 2%;
+    text-shadow: -4px 5px 4px #000, 0 -2px 0 #000, 2px 0 0 #000, -2px 0 0 #000;
+  }
+  .dog-image {
+    width: 85%;
+  }
+  .belt-container {
+    max-width: 400px;
+  }
+  .belt-text {
+    font-size: 0.8rem;
+  }
+  .footer-button {
+    width: 45px;
+    height: 45px;
+  }
+  .footer-buttons {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo-text {
+    font-size: 2.8rem;
+    text-shadow: -3px 4px 3px #000, 0 -1px 0 #000, 1px 0 0 #000, -1px 0 0 #000;
+  }
+  .dog-image {
+    width: 95%;
+  }
+  .belt-container {
+    max-width: 320px;
+  }
+  .belt-text {
+    font-size: 0.7rem;
+  }
+  .footer-button {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-buttons {
+    gap: 10px;
+  }
+}
+
+/* Portrait phones */
+@media screen and (max-width: 320px) {
+  .logo-text {
+    font-size: 2.5rem;
+  }
+  .dog-image {
+    width: 100%;
+  }
+  .belt-container {
+    max-width: 280px;
+  }
+  .belt-text {
+    font-size: 0.6rem;
+  }
+  .footer-button {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Landscape orientation */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+  .hero {
+    min-height: 120vh;
+  }
+  .logo-text {
+    top: 10%;
+  }
+  .dog-image {
+    width: 40%;
+  }
+  .belt-container {
+    transform: scale(0.8);
+  }
+}
+
+/* High-resolution displays */
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 192dpi) {
+  .hero {
+    background-size: contain;
+  }
+}
