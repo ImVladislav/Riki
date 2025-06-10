@@ -53,89 +53,28 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Add hover effect to TikTok cards
-const tiktokCards = document.querySelectorAll('.tiktok-card');
-
-tiktokCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.transform = 'scale(1.05)';
-        card.style.zIndex = '1';
-    });
-
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'scale(1)';
-        card.style.zIndex = '0';
-    });
-});
-
-// Add loading animation
-window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-    
-    // Animate hero text
-    const heroTexts = document.querySelectorAll('.hero-text p');
-    heroTexts.forEach((text, index) => {
-        setTimeout(() => {
-            text.style.opacity = '1';
-            text.style.transform = 'translateY(0)';
-        }, index * 200);
-    });
-});
-
-// Add glowing effect to buy button
-const buyBtn = document.querySelector('.buy-btn');
-if (buyBtn) {
-    setInterval(() => {
-        buyBtn.style.boxShadow = '0 0 20px var(--accent-color)';
-        setTimeout(() => {
-            buyBtn.style.boxShadow = 'none';
-        }, 1000);
-    }, 2000);
-}
-
-// Add animation on scroll for feature cards
-const featureCards = document.querySelectorAll('.feature-card');
-const tokenomicsCards = document.querySelectorAll('.tokenomics-card');
-
-const observerOptions = {
-    threshold: 0.2
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Add initial styles for animation
-featureCards.forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'all 0.5s ease-out';
-    observer.observe(card);
-});
-
-tokenomicsCards.forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'all 0.5s ease-out';
-    observer.observe(card);
-});
-
 function copyContract() {
     const contractText = document.querySelector('.belt-text').textContent;
     navigator.clipboard.writeText(contractText).then(() => {
         showModal();
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
     });
 }
 
 function showModal() {
     const modal = document.getElementById('modal');
-    modal.classList.add('show');
+    modal.style.display = 'flex';
     
+    // Trigger reflow to ensure the transition works
+    modal.offsetHeight;
+    
+    // Add show class after display is set
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
+    
+    // Hide modal after delay
     setTimeout(() => {
         modal.classList.remove('show');
         setTimeout(() => {
@@ -144,8 +83,16 @@ function showModal() {
     }, 2000);
 }
 
-// Initialize
+// Initialize modal on page load
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('modal');
+    const beltText = document.querySelector('.belt-text');
+    const beltImage = document.querySelector('.belt-image');
+    
+    // Hide modal initially
     modal.style.display = 'none';
+    
+    // Add click handlers
+    beltText.addEventListener('click', copyContract);
+    beltImage.addEventListener('click', copyContract);
 }); 
