@@ -361,7 +361,7 @@ footer .belt-container {
     top: 8%;
   }
   .dog-image {
-    width: 45%;
+    width: 100%;
   }
   .belt-container {
     max-width: 800px;
@@ -381,7 +381,7 @@ footer .belt-container {
     top: 7%;
   }
   .dog-image {
-    width: 50%;
+    width: 100%;
   }
   .belt-container {
     max-width: 700px;
@@ -394,7 +394,7 @@ footer .belt-container {
     top: 6%;
   }
   .dog-image {
-    width: 55%;
+    width: 100%;
   }
   .belt-container {
     max-width: 600px;
@@ -407,7 +407,7 @@ footer .belt-container {
     top: 5%;
   }
   .dog-image {
-    width: 60%;
+    width: 90%;
   }
 }
 
@@ -417,7 +417,7 @@ footer .belt-container {
     top: 4%;
   }
   .dog-image {
-    width: 65%;
+    width: 80%;
   }
   .footer-button {
     width: 55px;
@@ -532,8 +532,8 @@ footer .belt-container {
 }
 
 /* High-resolution displays */
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
-       screen and (min-resolution: 192dpi) {
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi) {
   .hero {
     background-size: contain;
   }
