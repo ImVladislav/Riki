@@ -193,11 +193,11 @@ footer {
     top: 3%;
   }
   .dog-image {
-    width: 700px;
+    width: 800px;
     margin-top: 10rem;
   }
   .belt-text {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   .heart-image {
     width: 200px;
@@ -210,11 +210,11 @@ footer {
     top: 3%;
   }
   .dog-image {
-    width: 600px;
+    width: 700px;
     margin-top: 8rem;
   }
   .belt-text {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 
@@ -224,11 +224,11 @@ footer {
     top: 2%;
   }
   .dog-image {
-    width: 400px;
+    width: 500px;
     margin-top: 7rem;
   }
   .belt-text {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
   .heart-image {
     width: 130px;
@@ -241,11 +241,11 @@ footer {
     top: 2%;
   }
   .dog-image {
-    width: 300px;
+    width: 400px;
     margin-top: 6rem;
   }
   .belt-text {
-    font-size: 0.55rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -255,11 +255,11 @@ footer {
     top: 2%;
   }
   .dog-image {
-    width: 300px;
+    width: 350px;
     margin-top: 5rem;
   }
   .belt-text {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .footer-button {
     width: 55px;
@@ -279,7 +279,7 @@ footer {
     width: 300px;
   }
   .belt-text {
-    font-size: 0.45rem;
+    font-size: 0.6rem;
   }
   .footer-button {
     width: 50px;
@@ -302,7 +302,7 @@ footer {
     top: 2%;
   }
   .belt-text {
-    font-size: 0.4rem;
+    font-size: 0.35rem;
   }
   .footer-button {
     width: 45px;
@@ -324,7 +324,7 @@ footer {
     font-size: 2.8rem;
   }
   .belt-text {
-    font-size: 0.35rem;
+    font-size: 0.3rem;
   }
   .footer-button {
     width: 40px;
@@ -343,7 +343,7 @@ footer {
     font-size: 2.5rem;
   }
   .belt-text {
-    font-size: 0.3rem;
+    font-size: 0.25rem;
   }
   .footer-button {
     width: 35px;
@@ -361,4 +361,4 @@ footer {
   .dog-image {
     width: 400px;
   }
-}
+} 
