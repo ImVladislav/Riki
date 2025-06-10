@@ -393,3 +393,9 @@ footer::before {
     width: 400px;
   }
 }
+@media screen and (max-width: 640px) {
+  .hero {
+    text-align: center;
+    height: 70vh;
+  }
+}
