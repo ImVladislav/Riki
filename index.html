@@ -29,8 +29,13 @@
     <footer>
         <div class="container">
             <div class="belt-container">
-                <img src="images/belt.png" alt="Belt" class="belt-image">
-                <div class="belt-text">CA: 4YXQfPvzkjVzWkxWnzUKaww3ewCzABrfepagxWzspump</div>
+                <img src="images/belt.png" alt="Belt" class="belt-image" onclick="copyContract()">
+                <div class="belt-text" onclick="copyContract()">CA: 4YXQfPvzkjVzWkxWnzUKaww3ewCzABrfepagxWzspump</div>
+            </div>
+            <div class="heart-container">
+                <a href="#" class="heart-link">
+                    <img src="images/heart.png" alt="Heart" class="heart-image">
+                </a>
             </div>
             <div class="footer-buttons">
                 <a href="#" class="footer-button">
@@ -50,6 +55,12 @@
 
         </div>
     </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Contract address copied to clipboard!</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

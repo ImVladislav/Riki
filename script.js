@@ -123,4 +123,29 @@ tokenomicsCards.forEach(card => {
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'all 0.5s ease-out';
     observer.observe(card);
+});
+
+function copyContract() {
+    const contractText = document.querySelector('.belt-text').textContent;
+    navigator.clipboard.writeText(contractText).then(() => {
+        showModal();
+    });
+}
+
+function showModal() {
+    const modal = document.getElementById('modal');
+    modal.classList.add('show');
+    
+    setTimeout(() => {
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 300);
+    }, 2000);
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
 }); 

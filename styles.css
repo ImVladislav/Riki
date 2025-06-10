@@ -91,7 +91,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url("images/bg_temp.webp");
+  /* background: url("images/bg_temp.webp"); */
   background-size: contain;
   background-position: center;
   /* background-attachment: fixed; */
@@ -168,7 +168,7 @@ body {
 
 .belt-text {
   position: absolute;
-  top: 19%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--primary-color);
@@ -375,6 +375,9 @@ footer .belt-container {
     width: 80px;
     height: 80px;
   }
+  .heart-image {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 1920px) {
@@ -403,6 +406,9 @@ footer .belt-container {
   .belt-container {
     max-width: 600px;
   }
+  .heart-image {
+    width: 130px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -429,6 +435,9 @@ footer .belt-container {
     width: 55px;
     height: 55px;
   }
+  .heart-image {
+    width: 110px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -451,6 +460,12 @@ footer .belt-container {
   }
   .footer-buttons {
     gap: 15px;
+  }
+  .heart-image {
+    width: 90px;
+  }
+  .heart-container {
+    margin-top: -1.5rem;
   }
 }
 
@@ -476,6 +491,12 @@ footer .belt-container {
   .footer-buttons {
     gap: 12px;
   }
+  .heart-image {
+    width: 70px;
+  }
+  .heart-container {
+    margin-top: -1rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -498,6 +519,9 @@ footer .belt-container {
   }
   .footer-buttons {
     gap: 10px;
+  }
+  .heart-image {
+    width: 60px;
   }
 }
 
@@ -543,4 +567,115 @@ footer .belt-container {
   .hero {
     background-size: contain;
   }
+}
+
+.heart-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.heart-image {
+  width: 150px;
+  height: auto;
+  position: relative;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1921px) {
+  .heart-image {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .heart-image {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heart-image {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heart-image {
+    width: 90px;
+  }
+  .heart-container {
+    margin-top: -1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heart-image {
+    width: 70px;
+  }
+  .heart-container {
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .heart-image {
+    width: 60px;
+  }
+}
+
+.belt-image, .belt-text {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.belt-image:hover, .belt-text:hover {
+  transform: scale(1.02);
+}
+
+.heart-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.heart-link:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: 1px solid #cfbda5;
+  color: #cfbda5;
+  font-size: 1.2rem;
+  text-align: center;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
 }
