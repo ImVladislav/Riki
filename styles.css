@@ -77,20 +77,36 @@ body {
 
 .belt-text {
   position: absolute;
-  top: 45%;
+  top: 41%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #cfbda5;
   font-weight: 900;
   font-family: Arial, sans-serif;
-  text-shadow: -6px 7px 6px #000, 0 -2px 0 #000, 2px 0 0 #000, -2px 0 0 #000;
-  letter-spacing: 2px;
+  /* text-shadow: -6px 7px 6px #000, 0 -2px 0 #000, 2px 0 0 #000, -2px 0 0 #000; */
+  letter-spacing: 1px;
   white-space: nowrap;
   font-size: 1.4rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+@media screen and (min-width: 640px) {
+  .belt-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #cfbda5;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+    text-shadow: -6px 7px 6px #000, 0 -2px 0 #000, 2px 0 0 #000, -2px 0 0 #000;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
 .belt-text:hover {
   transform: translate(-50%, -50%) scale(1.03);
 }
@@ -331,7 +347,7 @@ footer::before {
     margin-top: 1.5rem;
   }
   .belt-text {
-    font-size: 0.3rem;
+    font-size: 0.4rem;
   }
   .footer-button {
     width: 45px;
