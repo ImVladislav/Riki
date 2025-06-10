@@ -414,5 +414,6 @@ footer::before {
   .hero {
     text-align: center;
     height: 60vh;
+    background-image: url(/images/bg_temp2.gif);
   }
 }
