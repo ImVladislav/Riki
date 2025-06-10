@@ -28,7 +28,7 @@ body {
 /* Hero Section */
 .hero {
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   background-size: contain;
@@ -54,17 +54,7 @@ body {
   width: 800px;
   height: auto;
   position: relative;
-  margin-top: 8rem;
-}
-.hero {
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background-size: contain;
-  background-position: center;
-  background-image: url(/images/bg_temp.webp);
-  position: relative;
+  margin-top: 4rem;
 }
 
 .hero::before {
@@ -96,7 +86,7 @@ body {
   text-shadow: -6px 7px 6px #000, 0 -2px 0 #000, 2px 0 0 #000, -2px 0 0 #000;
   letter-spacing: 2px;
   white-space: nowrap;
-  font-size: 0.7rem;
+  font-size: 1.4rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -113,7 +103,7 @@ body {
   font-size: 8rem;
   font-weight: 900;
   color: #cfbda5;
-  text-shadow: -6px 7px 6px #000, 0 -2px 0 #000, 2px 0 0 #000, -2px 0 0 #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   font-family: Arial, sans-serif;
 }
@@ -228,10 +218,10 @@ footer::before {
   }
   .dog-image {
     width: 700px;
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   .belt-text {
-    font-size: 0.9rem;
+    font-size: 1.8rem;
   }
   .heart-image {
     width: 200px;
@@ -245,10 +235,10 @@ footer::before {
   }
   .dog-image {
     width: 600px;
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
   .belt-text {
-    font-size: 0.7rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -259,10 +249,10 @@ footer::before {
   }
   .dog-image {
     width: 400px;
-    margin-top: 7rem;
+    margin-top: 3.5rem;
   }
   .belt-text {
-    font-size: 0.6rem;
+    font-size: 1.2rem;
   }
   .heart-image {
     width: 130px;
@@ -276,10 +266,10 @@ footer::before {
   }
   .dog-image {
     width: 300px;
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
   .belt-text {
-    font-size: 0.55rem;
+    font-size: 1rem;
   }
 }
 
@@ -290,10 +280,10 @@ footer::before {
   }
   .dog-image {
     width: 300px;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
   }
   .belt-text {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
   .footer-button {
     width: 55px;
@@ -311,9 +301,10 @@ footer::before {
   }
   .dog-image {
     width: 300px;
+    margin-top: 2rem;
   }
   .belt-text {
-    font-size: 0.45rem;
+    font-size: 0.7rem;
   }
   .footer-button {
     width: 50px;
@@ -335,8 +326,11 @@ footer::before {
     font-size: 3.2rem;
     top: 2%;
   }
+  .dog-image {
+    margin-top: 1.5rem;
+  }
   .belt-text {
-    font-size: 0.2rem;
+    font-size: 0.5rem;
   }
   .footer-button {
     width: 45px;
@@ -357,8 +351,11 @@ footer::before {
   .logo-text {
     font-size: 2.8rem;
   }
+  .dog-image {
+    margin-top: 1rem;
+  }
   .belt-text {
-    font-size: 0.35rem;
+    font-size: 0.4rem;
   }
   .footer-button {
     width: 40px;
@@ -377,7 +374,7 @@ footer::before {
     font-size: 2.5rem;
   }
   .belt-text {
-    font-size: 0.3rem;
+    font-size: 0.35rem;
   }
   .footer-button {
     width: 35px;
