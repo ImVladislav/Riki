@@ -131,7 +131,7 @@ footer::before {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
 }
 
 .footer-button {
